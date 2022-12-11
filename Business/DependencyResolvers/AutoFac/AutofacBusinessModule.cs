@@ -39,8 +39,9 @@ namespace Business.DependencyResolvers.AutoFac
 
             builder.RegisterType<MailTemplateManager>().As<IMailTemplateService>();
             builder.RegisterType<EfMailTemplateDal>().As<IMailTemplateDal>();
+            builder.RegisterType<StudentManager>().As<IStudentService>();
+            builder.RegisterType<EfStudentDal>().As<IStudentDal>();
 
-          
         }
     }
 }

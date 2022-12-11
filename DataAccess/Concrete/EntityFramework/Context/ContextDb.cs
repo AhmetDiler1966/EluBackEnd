@@ -22,6 +22,7 @@ namespace DataAccess.Concrete.EntityFramework.Context
         public DbSet<MailParameter> MailParameters { get; set; }
         public DbSet<ForgotPassword> ForgotPasswords { get; set; }
         public DbSet<MailTemplate> MailTemplates { get; set; }
+        public DbSet<Ogis01> Ogis01 { get; set; }
 
     }
 }
