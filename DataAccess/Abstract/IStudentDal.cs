@@ -11,5 +11,6 @@ namespace DataAccess.Abstract
 {
     public interface IStudentDal : IEntityRepository<Ogis01>
     {
+        List<Student> GetListDto(string sOgrenciNo);
     }
 }

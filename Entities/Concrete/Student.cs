@@ -21,18 +21,13 @@ namespace Entities.Concrete
         public string Uyruk { get; set; }
         public string Cinsiyet { get; set; }
         public string BabaMeslek { get; set; }
-        public string Fakulte { get; set; }
-        public string Bolum { get; set; }
+        public string FakulteIng { get; set; }
+        public string FakulteTr { get; set; }
+        public string BolumIng { get; set; }
+        public string BolumTr { get; set; }
         public string Sinif { get; set; }
         public DateTime KayitTarihi { get; set; }
-        public string GirisSekli { get; set; }
-        public string GirisPuani { get; set; }
-        public string PuanTuru { get; set; }
-        public DateTime AyrilmaTarihi { get; set; }
-        public string AyrilmaNedeni { get; set; }
         public string AktifDurum { get; set; }
-        public string Burs { get; set; }
-        public string BursOrani { get; set; }
         public string PasaportNo { get; set; }
         public string KimlikNo { get; set; }
     }

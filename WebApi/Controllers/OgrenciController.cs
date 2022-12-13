@@ -25,5 +25,17 @@ namespace WebApi.Controllers
             }
             return BadRequest(result);
         }
+
+        [HttpGet("getlistOgrenciDto")]
+        public IActionResult GetListDto(string sOgrenciNo)
+        {
+            var result = _studentService.GetListDto(sOgrenciNo);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result.Message);
+        }
+
     }
 }

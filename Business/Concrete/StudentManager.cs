@@ -26,5 +26,10 @@ namespace Business.Concrete
         {
             return new SuccessDataResult<Ogis01>(_studentDal.Get(u => u.Ogrno == sOgrenciNo));
         }
+
+        public IDataResult<List<Student>> GetListDto(string sOgrenciNo)
+        {
+            return new SuccessDataResult<List<Student>>(_studentDal.GetListDto(sOgrenciNo));
+        }
     }
 }

@@ -12,5 +12,6 @@ namespace Business.Abstract
     public interface IStudentService
     {
         IDataResult<Ogis01> GetByOgrNo(string sOgrenciNo);
+        IDataResult<List<Student>> GetListDto(string sOgrenciNo);
     }
 }
